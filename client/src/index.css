@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f6f8f7;
+  color: #15231f;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.pulse-line-path {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes draw-pulse {
+  to {
+    stroke-dashoffset: -400;
+  }
+}

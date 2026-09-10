@@ -1,0 +1,21 @@
+# Node
+node_modules/
+dist/
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Model artifacts (large — don't commit)
+model/checkpoints/
+model/data/*.csv
+!model/data/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
